@@ -11,3 +11,8 @@ const student = {
   console.log("Name:", student.name);
   console.log("Age:", student.age);
   console.log("Info:", student.displayInfo());
+
+  const studentJSON = JSON.stringify(student);
+  console.log("JSON String:", studentJSON);
+ 
+  const newStudent = JSON.parse(studentJSON);
