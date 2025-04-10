@@ -47,3 +47,7 @@ const student = {
   console.log("Courses after adding Geography:", student.courses);
   console.log("Total Courses:", student.totalCourses());
  
+
+
+  const averageScore = scores.reduce((acc, val) => acc + val, 0) / scores.length;
+  console.log("Average Score:", averageScore.toFixed(2));
