@@ -34,3 +34,16 @@ const student = {
   const newCourses = ["Math", "English"];
   const allCourses = [...student.courses, ...newCourses];
   console.log("Merged Courses Array:", allCourses);
+
+  student.addCourse = function (course) {
+    this.courses.push(course);
+  };
+ 
+  student.totalCourses = function () {
+    return this.courses.length;
+  };
+ 
+  student.addCourse("Geography");
+  console.log("Courses after adding Geography:", student.courses);
+  console.log("Total Courses:", student.totalCourses());
+ 
