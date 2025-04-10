@@ -16,3 +16,5 @@ const student = {
   console.log("JSON String:", studentJSON);
  
   const newStudent = JSON.parse(studentJSON);
+  console.log("Parsed Object:", newStudent);
+  console.log("Are objects equal?", JSON.stringify(student) === JSON.stringify(newStudent));
